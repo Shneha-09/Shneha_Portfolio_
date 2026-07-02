@@ -30,10 +30,9 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
-    cursor: none;
   }
 
-  /* Custom cursor */
+  /* Custom cursor 
   .cursor {
     width: 10px; height: 10px;
     background: var(--gold);
@@ -53,7 +52,7 @@
     z-index: 9998;
     transform: translate(-50%, -50%);
     transition: all 0.25s ease;
-  }
+  }*/
 
   /* Grain overlay */
   body::before {
@@ -480,7 +479,40 @@
     color: var(--gold);
     font-size: 0.7rem;
     top: 2px;
-  }
+  }.project-links{
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:10;
+}
+
+.project-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#c9a84c;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    cursor:pointer;
+    position:relative;
+    z-index:11;
+}
+
+.project-btn:hover{
+    background:transparent;
+    color:var(--gold);
+    text-decoration:none !important;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(201,168,76,.25);
+}
+
+.project-btn:visited,
+.project-btn:active,
+.project-btn:link{
+    text-decoration:none !important;
+}
 
   /* EXPERIENCE */
   #experience { background: var(--bg); }
@@ -853,9 +885,9 @@
         <span class="skill-tag">Python</span>
         <span class="skill-tag">Power BI</span>
         <span class="skill-tag">Tableau</span>
-        
       </div>
-    </div>
+      </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
@@ -878,47 +910,114 @@
         <li>Integrated the Winograd algorithm to optimise convolution operations and enhance computational efficiency.</li>
         <li>Achieved high accuracy and real-time prediction capability supporting faster and reliable diagnosis.</li>
       </ul>
+         <div class="project-links">
+        <a href="https://the-healthcare-detection-using-winograd.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn">
+            🚀 Live Website
+        </a>
+      
+        <a href="https://github.com/Shneha-09/Resource-Efficient-Feature-Extraction-of-Healthcare-Detection-Using-Winograd-Convolution-Algorithm"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-btn">
+            💻 GitHub
+        </a>
+
+    </div>
+
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">02</div>
-      <div class="project-tag">Full Stack Development · Client Project</div>
-      <h3 class="project-title">Bobby Media Photo Studio Website</h3>
-      <ul class="project-points">
+    <div class="project-num">02</div>
+    <div class="project-tag">Full Stack Development · Client Project</div>
+
+    <h3 class="project-title">
+        Bobby Media Photo Studio Website
+    </h3>
+
+    <ul class="project-points">
         <li>Developed and deployed a professional photography studio website using Next.js, React.js, MongoDB, and Tailwind CSS.</li>
         <li>Built a responsive multi-page website with Home, Services, Gallery, Portfolio, Packages, and Contact sections.</li>
         <li>Designed and implemented a secure Admin Dashboard for managing gallery images, services, and website content.</li>
         <li>Integrated MongoDB and Cloudinary for dynamic image and content management.</li>
         <li>Optimized website performance, SEO, and mobile responsiveness for a seamless user experience.</li>
-      </ul>
+    </ul>
+
+    <div class="project-links">
+        <a href="https://bobby-media-studio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn">
+            🚀 Live Website
+        </a>
+      
+        <a href="https://github.com/Shneha-09/BobbyMedia_Studio"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-btn">
+            💻 GitHub
+        </a>
+
     </div>
 
-    <div class="project-card reveal">
-      <div class="project-num">03</div>
-      <div class="project-tag">Deep Learning · NLP</div>
-      <h3 class="project-title">End-to-End Speech Recognition Pipeline</h3>
-      <ul class="project-points">
-        <li>Built an end-to-end Automatic Speech Recognition (ASR) pipeline to convert raw audio into text.</li>
-        <li>Performed audio preprocessing and feature extraction using MFCCs and spectrograms.</li>
-        <li>Trained deep learning models (CNN / RNN / Transformer) for speech-to-text transcription.</li>
-        <li>Evaluated performance using Word Error Rate (WER) and optimised transcription accuracy.</li>
-      </ul>
     </div>
 
+   <div class="project-card reveal">
+    <div class="project-num">03</div>
+
+  <div class="project-tag">Web Development · Full-Stack E-Commerce</div>
+
+  <h3 class="project-title">
+    Lakshmi Kai Pakkuvam – Premium E-Commerce Website
+  </h3>
+
+  <ul class="project-points">
+    <li>
+      Designed and developed a fully responsive premium e-commerce website for a South Indian homemade food brand.
+    </li>
+
+    <li>
+      Built dynamic product listing, category filtering, cart system, and checkout flow using modern web architecture.
+    </li>
+
+    <li>
+      Implemented admin dashboard for product, order, and inventory management with real-time updates.
+    </li>
+
+    <li>
+      Integrated MongoDB / Supabase backend with secure API routes for data handling and scalability.
+    </li>
+
+    <li>
+      Optimized UI/UX with mobile-first design, smooth animations, and luxury brand aesthetics using Tailwind CSS.
+    </li>
+
+    <li>
+      Focused on SEO optimization, fast loading performance, and production-ready deployment structure.
+    </li>
+  </ul>
+
+   <div class="project-links">
+        <a href="https://lakshmi-kai-pakkuvam.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn">
+            🚀 Live Website
+        </a>
+      
+        <a href="https://github.com/Shneha-09/Lakshmi-Kai-Pakkuvam"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-btn">
+            💻 GitHub
+        </a>
+
+    </div>
+</div>
     <div class="project-card reveal">
       <div class="project-num">04</div>
-      <div class="project-tag">Web Development · E-Commerce</div>
-      <h3 class="project-title">Full-Featured E-Commerce Website</h3>
-      <ul class="project-points">
-        <li>Designed and developed a fully responsive e-commerce platform from scratch.</li>
-        <li>Implemented product listing pages, shopping cart functionality, and checkout flows.</li>
-        <li>Focused on clean UI/UX principles with modern, mobile-first design patterns.</li>
-        <li>Built with HTML, CSS, and JavaScript ensuring fast load times and smooth user interactions.</li>
-        <li>Applied SEO best practices to improve discoverability and organic reach.</li>
-      </ul>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">05</div>
       <div class="project-tag">Web Development · E-Commerce</div>
       <h3 class="project-title">Sivakasi Boutique E-Commerce Website</h3>
       <ul class="project-points">
@@ -928,10 +1027,26 @@
         <li>Integrated backend services and optimized website performance.</li>
         <li>Applied SEO best practices to improve visibility and search rankings.</li>
       </ul>
+      <div class="project-links">
+        <a href="https://sivakasi-boutique-yc43.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn">
+            🚀 Live Website
+        </a>
+      
+        <a href="https://github.com/Shneha-09/Sivakasi_boutique_"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-btn">
+            💻 GitHub
+        </a>
+
+    </div>
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">06</div>
+      <div class="project-num">05</div>
       <div class="project-tag">Web Development · Education</div>
       <h3 class="project-title">Akshaya Vidyalaya School Website</h3>
       <ul class="project-points">
@@ -940,6 +1055,33 @@
         <li>Implemented smooth navigation and mobile-responsive layouts.</li>
         <li>Enhanced user experience through modern design and accessibility features.</li>
         <li>Deployed the website using GitHub and modern hosting platforms.</li>
+      </ul>
+        <div class="project-links">
+                <a href="https://akshaya-vidyalaya-matric-high-sec-s.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-btn">
+                    🚀 Live Website
+                </a>
+              
+                <a href="https://github.com/Shneha-09/Akshaya_Vidyalaya_Matric_High_Sec_School"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn">
+                    💻 GitHub
+                </a>
+
+        </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">06</div>
+      <div class="project-tag">Deep Learning · NLP</div>
+      <h3 class="project-title">End-to-End Speech Recognition Pipeline</h3>
+      <ul class="project-points">
+        <li>Built an end-to-end Automatic Speech Recognition (ASR) pipeline to convert raw audio into text.</li>
+        <li>Performed audio preprocessing and feature extraction using MFCCs and spectrograms.</li>
+        <li>Trained deep learning models (CNN / RNN / Transformer) for speech-to-text transcription.</li>
+        <li>Evaluated performance using Word Error Rate (WER) and optimised transcription accuracy.</li>
       </ul>
     </div>
 
@@ -1046,11 +1188,11 @@
       <span class="contact-link-icon">📞</span>
       +91 81486 45508
     </a>
-    <a href="https://linkedin.com" target="_blank" class="contact-link">
+    <a href="https://www.linkedin.com/in/shnehamol/" target="_blank" class="contact-link">
       <span class="contact-link-icon">💼</span>
       LinkedIn Profile
     </a>
-    <a href="https://github.com" target="_blank" class="contact-link">
+    <a href="https://github.com/Shneha-09/BobbyMedia_Studio" target="_blank" class="contact-link">
       <span class="contact-link-icon">🐙</span>
       GitHub Profile
     </a>
@@ -1065,7 +1207,7 @@
 </footer>
 
 <script>
-  // Custom Cursor
+  /*// Custom Cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1096,7 +1238,7 @@
       ring.style.transform = 'translate(-50%,-50%) scale(1)';
       ring.style.borderColor = 'rgba(201,168,76,0.5)';
     });
-  });
+  });*/
 
   // Scroll Reveal
   const observer = new IntersectionObserver(entries => {
